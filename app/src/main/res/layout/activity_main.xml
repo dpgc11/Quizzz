@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
 
@@ -24,41 +24,37 @@
                 style="@style/TextviewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
 
-            <RadioButton
-                android:id="@+id/answer1_a"
-                style="@style/ButtonStyle"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/answer1_b"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer1_a"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer1_c"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer1_b"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer1_d"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer1_c"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/answer1_d"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp" />
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -72,41 +68,37 @@
                 style="@style/TextviewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
 
-            <RadioButton
-                android:id="@+id/answer2_a"
-                style="@style/ButtonStyle"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/answer2_b"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer2_a"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer2_c"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer2_b"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer2_d"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer2_c"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/answer2_d"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp" />
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -120,41 +112,37 @@
                 style="@style/TextviewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
 
-            <RadioButton
-                android:id="@+id/answer3_a"
-                style="@style/ButtonStyle"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/answer3_b"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer3_a"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer3_c"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer3_b"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer3_d"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer3_c"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/answer3_d"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp" />
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -168,41 +156,37 @@
                 style="@style/TextviewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
 
-            <RadioButton
-                android:id="@+id/answer4_a"
-                style="@style/ButtonStyle"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/answer4_b"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer4_a"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer4_c"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer4_b"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer4_d"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer4_c"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/answer4_d"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp" />
+            </RadioGroup>
         </LinearLayout>
 
 
@@ -217,41 +201,37 @@
                 style="@style/TextviewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
 
-            <RadioButton
-                android:id="@+id/answer5_a"
-                style="@style/ButtonStyle"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/answer5_b"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer5_a"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer5_c"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer5_b"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer5_d"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer5_c"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/answer5_d"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp" />
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -265,41 +245,37 @@
                 style="@style/TextviewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
 
-            <RadioButton
-                android:id="@+id/answer6_a"
-                style="@style/ButtonStyle"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/answer6_b"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer6_a"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer6_c"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer6_b"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
-                android:id="@+id/answer6_d"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:onClick="answer"
-                android:text="Button" />
+                <RadioButton
+                    android:id="@+id/answer6_c"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/answer6_d"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp" />
+            </RadioGroup>
         </LinearLayout>
 
         <Button
