@@ -2,8 +2,8 @@ package com.example.android.quizzz;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton answer6b;
     RadioButton answer6c;
     RadioButton answer6d;
-    private int count;
+    int count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +50,10 @@ public class MainActivity extends AppCompatActivity {
         assignQuestions();
     }
 
-    public void submitAnswers() {
+    public void submitAnswers(View view) {
         calculateScore();
         Toast.makeText(this, "You got " + this.count + " answers correct out of 6!", Toast.LENGTH_LONG).show();
+        this.count = 0;
     }
 
     public void calculateScore() {
@@ -114,60 +115,30 @@ public class MainActivity extends AppCompatActivity {
         this.answer1b = (RadioButton) findViewById(R.id.answer1_b);
         this.answer1c = (RadioButton) findViewById(R.id.answer1_c);
         this.answer1d = (RadioButton) findViewById(R.id.answer1_d);
-        RadioGroup answer1 = new RadioGroup(getApplicationContext());
-        answer1.addView(answer1a);
-        answer1.addView(answer1b);
-        answer1.addView(answer1c);
-        answer1.addView(answer1d);
         this.question2 = (TextView) findViewById(R.id.question2_textView);
         this.answer2a = (RadioButton) findViewById(R.id.answer2_a);
         this.answer2b = (RadioButton) findViewById(R.id.answer2_b);
         this.answer2c = (RadioButton) findViewById(R.id.answer2_c);
         this.answer2d = (RadioButton) findViewById(R.id.answer2_d);
-        RadioGroup answer2 = new RadioGroup(getApplicationContext());
-        answer2.addView(answer2a);
-        answer2.addView(answer2b);
-        answer2.addView(answer2c);
-        answer2.addView(answer2d);
         this.question3 = (TextView) findViewById(R.id.question3_textView);
         this.answer3a = (RadioButton) findViewById(R.id.answer3_a);
         this.answer3b = (RadioButton) findViewById(R.id.answer3_b);
         this.answer3c = (RadioButton) findViewById(R.id.answer3_c);
         this.answer3d = (RadioButton) findViewById(R.id.answer3_d);
-        RadioGroup answer3 = new RadioGroup(getApplicationContext());
-        answer3.addView(answer3a);
-        answer3.addView(answer3b);
-        answer3.addView(answer3c);
-        answer3.addView(answer3d);
         this.question4 = (TextView) findViewById(R.id.question4_textView);
         this.answer4a = (RadioButton) findViewById(R.id.answer4_a);
         this.answer4b = (RadioButton) findViewById(R.id.answer4_b);
         this.answer4c = (RadioButton) findViewById(R.id.answer4_c);
         this.answer4d = (RadioButton) findViewById(R.id.answer4_d);
-        RadioGroup answer4 = new RadioGroup(getApplicationContext());
-        answer4.addView(answer4a);
-        answer4.addView(answer4b);
-        answer4.addView(answer4c);
-        answer4.addView(answer4d);
         this.question5 = (TextView) findViewById(R.id.question5_textView);
         this.answer5a = (RadioButton) findViewById(R.id.answer5_a);
         this.answer5b = (RadioButton) findViewById(R.id.answer5_b);
         this.answer5c = (RadioButton) findViewById(R.id.answer5_c);
         this.answer5d = (RadioButton) findViewById(R.id.answer5_d);
-        RadioGroup answer5 = new RadioGroup(getApplicationContext());
-        answer5.addView(answer5a);
-        answer5.addView(answer5b);
-        answer5.addView(answer5c);
-        answer5.addView(answer5d);
         this.question6 = (TextView) findViewById(R.id.question6_textView);
         this.answer6a = (RadioButton) findViewById(R.id.answer6_a);
         this.answer6b = (RadioButton) findViewById(R.id.answer6_b);
         this.answer6c = (RadioButton) findViewById(R.id.answer6_c);
         this.answer6d = (RadioButton) findViewById(R.id.answer6_d);
-        RadioGroup answer6 = new RadioGroup(getApplicationContext());
-        answer6.addView(answer6a);
-        answer6.addView(answer6b);
-        answer6.addView(answer6c);
-        answer6.addView(answer6d);
     }
 }
