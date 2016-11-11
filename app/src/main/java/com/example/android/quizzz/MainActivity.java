@@ -2,16 +2,11 @@ package com.example.android.quizzz;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class MainActivity extends AppCompatActivity {
 
-    Map<String, String> questions;
     TextView question1;
     RadioButton answer1a;
     RadioButton answer1b;
@@ -47,7 +42,54 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.questions = new HashMap<>();
+        findElements();
+        assignQuestions();
+
+    }
+
+    public void submitAnswers() {
+
+    }
+
+    public void assignQuestions() {
+        question1.setText("1. There are five birds sitting on electric wire. Two were shot and killed by a hunter. How many are left?");
+        answer1a.setText("3 birds");
+        answer1b.setText("0 birds");
+        answer1c.setText("2 birds"); // correct
+        answer1d.setText("5 birds");
+        question2.setText("2. There is a big turtle. It is walking with a little turtle. The little turtle is the big turtle's son but the big turtle isn't the dad. who is the big turtle?");
+        answer2a.setText("A stranger");
+        answer2b.setText("His step dad");
+        answer2c.setText("The mom"); //
+        answer2d.setText("Step mom");
+        question3.setText("3. What's 1+2+3+4+5+6+.....+98+99+100?");
+        answer3a.setText("5050"); //
+        answer3b.setText("10100");
+        answer3c.setText("12345678910");
+        answer3d.setText("100");
+        question4.setText("4. A guy is condemned to death. He has to choose a room.\n" +
+                "room #1: A fiery inferno\n" +
+                "room #2: 30 assassins with loaded guns.\n" +
+                "room #3: A room full of hungry lions that didn't eat in 3 months.\n" +
+                "Which room is the safest?");
+        answer4a.setText("Room #2 because the assassins might not shoot you.");
+        answer4b.setText("Room #1 because you think so");
+        answer4c.setText("Room #3 because the lions would be dead if it didn't eat in 3 months");   //
+        answer4d.setText("None");
+        question5.setText("5. Jim's peacock laid an egg on Bobby's lawn. Who's egg is it?");
+        answer5a.setText("Nobody");    //
+        answer5b.setText("Bobby's because its on his lawn");
+        answer5c.setText("The Peacocks because it was the one who laid the egg");
+        answer5d.setText("Jim's because its Jim's peacock");
+        question6.setText("6. A magician said if anybody can be under water for 10 minutes, he'll give them $100,000. A young boy volunteered and won. How is that possible?");
+        answer6a.setText("He got a cup of water and put it on his head so he is under water");  //
+        answer6b.setText("He cheated and won");
+        answer6c.setText("He went in a swimming pool and did it");
+        answer6d.setText("He stole it");
+
+    }
+
+    public void findElements() {
         this.question1 = (TextView) findViewById(R.id.question1_textView);
         this.answer1a = (RadioButton) findViewById(R.id.answer1_a);
         this.answer1b = (RadioButton) findViewById(R.id.answer1_b);
@@ -78,31 +120,5 @@ public class MainActivity extends AppCompatActivity {
         this.answer6b = (RadioButton) findViewById(R.id.answer6_b);
         this.answer6c = (RadioButton) findViewById(R.id.answer6_c);
         this.answer6d = (RadioButton) findViewById(R.id.answer6_d);
-    }
-
-    public void addQuestion(String question, String answer) {
-        if (!this.questions.containsKey(question)) {
-            this.questions.put(question, answer);
-        }
-    }
-
-    public boolean getAnswer(String question, String answer) {
-        boolean flag = false;
-
-        if (this.questions.containsKey(question)) {
-            for (String q : this.questions.keySet()) {
-                if (this.questions.get(q).equalsIgnoreCase(answer)) {
-                    flag = true;
-                } else {
-                    flag = false;
-                }
-            }
-        }
-
-        return flag;
-    }
-
-    public void answer(View view) {
-
     }
 }
