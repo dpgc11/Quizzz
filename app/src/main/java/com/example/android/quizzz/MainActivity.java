@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswers() {
         calculateScore();
-        Toast.makeText(this, "You got " + this.count + " answers correct out of 6!", Toast.LENGTH_LONG);
+        Toast.makeText(this, "You got " + this.count + " answers correct out of 6!", Toast.LENGTH_LONG).show();
     }
 
     public void calculateScore() {
