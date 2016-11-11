@@ -1,9 +1,12 @@
 package com.example.android.quizzz;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
     RadioButton answer6b;
     RadioButton answer6c;
     RadioButton answer6d;
+    Button submit;
+    RadioGroup r1;
+    RadioGroup r2;
+    RadioGroup r3;
+    RadioGroup r4;
+    RadioGroup r5;
+    RadioGroup r6;
     int count;
 
     @Override
@@ -52,8 +62,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswers(View view) {
         calculateScore();
+        if (count > 3) {
+            view.setBackgroundColor(Color.GREEN);
+        } else {
+            view.setBackgroundColor(Color.RED);
+        }
         Toast.makeText(this, "You got " + this.count + " answers correct out of 6!", Toast.LENGTH_LONG).show();
         this.count = 0;
+        resetRadios();
+    }
+
+    public void resetRadios() {
+        r1.clearCheck();
+        r2.clearCheck();
+        r3.clearCheck();
+        r4.clearCheck();
+        r5.clearCheck();
+        r6.clearCheck();
     }
 
     public void calculateScore() {
@@ -140,5 +165,12 @@ public class MainActivity extends AppCompatActivity {
         this.answer6b = (RadioButton) findViewById(R.id.answer6_b);
         this.answer6c = (RadioButton) findViewById(R.id.answer6_c);
         this.answer6d = (RadioButton) findViewById(R.id.answer6_d);
+        this.submit = (Button) findViewById(R.id.submit_button);
+        r1 = (RadioGroup) findViewById(R.id.rg1);
+        r2 = (RadioGroup) findViewById(R.id.rg2);
+        r3 = (RadioGroup) findViewById(R.id.rg3);
+        r4 = (RadioGroup) findViewById(R.id.rg4);
+        r5 = (RadioGroup) findViewById(R.id.rg5);
+        r6 = (RadioGroup) findViewById(R.id.rg6);
     }
 }
